@@ -1,0 +1,197 @@
+/* Procedimento de Formatação de Conteúdo HTML no CSS */
+/* 1º Forma de formatação: Formatação por TAG */
+/* 2º Forma de formatação: Fomatação por ID - (#) - "fatias principais" */
+/* 3º Forma de formatação: Formatação por CLASS - (.) - "conteúdos internos"  */
+/* 4º Forma de formatação: Formatação por seletores e atributos (Formatação por Pré-processadores CSS - Sass e Less)  */
+
+/* Esse Código CSS possui a reponsabilidade de estruturar e construir a estética de toda a página web */
+/* É de responsabilidade do CSS também, todoss os ajustes de Responsividade */
+
+/* Formatação por TAG */
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: Tahoma;
+    background: #020024;
+background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(30, 30, 214, 1) 50%, rgba(0, 212, 255, 1) 100%);
+}
+
+li {
+    list-style: none;
+}
+
+label {
+    font-size: 18px;
+    font-style: italic;
+    color: #ffffff;
+}
+
+#end{
+    background-color:  #00007c;
+    color: #ffffff;
+    /* 2 valores em um padding ou marging:
+    primeiro número: afeta a parte inferior e superior
+    segundo número: afeta as laterais esquerda e direita */
+    padding: 20px 0px;
+    text-align: center;
+    font-family: 16px;
+}
+
+#top {
+    background-color: #00007c;
+    color: #ffffff;
+    padding: 22px;
+}
+
+/* Formatação por ID */
+.img-user {
+    /* Tamanho lado a lado */
+    width: 120px;
+    /* Tamanho cima baixo */
+    height: 120px;
+    /* Arredonda a borda */
+    border-radius: 50%;
+}
+
+/* Flex e Grid são responsáveis pela responsividade, adaptando o layout para desktop, notebook, tablet e celular.  */
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.link-menu {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+/* hover: muda a cor quando o mouse passa */
+.link-menu:hover {
+    color: #00ffff;
+}
+
+
+
+
+.formlayout {
+    display: flex;
+    flex-direction: column;
+    padding: 34px;
+}
+
+/* formatação agrupada */
+.camp-login, .camp-cadastro {
+    width: 100%;
+    height: 35px;
+    background-color: #ffffff;
+    color: #000000;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-bottom: 22px;
+}
+
+.camp-cadastro-msg {
+    width: 100%;
+    height: 75px;
+    background-color: #ffffff;
+    color: #000000;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: Tahoma;
+    margin-bottom: 22px;
+}
+
+.bntAcessar{
+    /* largura */
+    width: 95px;
+
+    /* altura */
+    height: 35px;
+
+    /* borda externa */
+    outline: none;
+
+    /* borda interna */
+    border: none;
+
+    /* arredondamento das quinas */
+    border-radius: 6px;
+
+    /* cor de fundo */
+    background-color: #000dc4;
+
+    /* cor da letra */
+    color: #ffffff;
+
+    /* mãozinha de clicar */
+    cursor: pointer;
+
+    /* tamanho fonte */
+    font-size: 16px;            
+}
+
+.bntAcessar:hover{
+    /* muda de cor ao  passar o mouse */
+    background-color: #1b2af5;
+}
+
+.bntCadastrar{
+    width: 95px;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background-color: #0da100;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.bntCadastrar:hover{
+    background-color: #096b00;   
+}
+
+/* Função nativa de responsividade! */
+/* Media para resolução de celulares: 768px */
+/* Mwdia para resolução de tablets: 992px até 998px */
+@media screen and (min-width: 998px){
+
+.aligniLink {
+    display: flex;
+    gap: 22px;
+
+}
+ 
+.boxform {
+    display: grid;
+    grid-template-columns: 50% 50%; /* 1fr 1fr/ Colunas */
+    /* grid-template-rows: Linhas */
+    justify-items: center;
+    align-items: center;
+}
+
+.camp-login, .camp-cadastro {
+    width: 380px;}
+
+    .camp-cadastro-msg {
+    width: 380px;}
+
+}
+
+@media screen and (max-width: 998px){
+
+.aligniLink {
+    display: flex;
+    gap: 22px;
+    flex-direction: column;
+}
+
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Login & Cadastro</title>
+</head>
+<body id="page">
+<header id="top">
+    <!-- MAXIMO 3 SECTIONS-->
+<section class="top"> 
+    <div> 
+        <img src="./img/user.jpg" alt="imagem do usuario" title="imagem do usuario" class="img-user">
+    </div>
+
+    <div> 
+        <nav>
+            <!-- ul: lista não ordenada - ol: lista ordenada -->
+            <!-- target="_blank" = abre paginas em outra aba -->
+            <ul class="aligniLink"> 
+                <li class="link-list">
+                    <a href="http://www.facebook.com.br" target="_blank" class="link-menu">Facebook</a>
+                </li>
+                <li class="link-list">
+                    <a href="http://www.instagram.com.br" target="_blank" class="link-menu">Instagram</a>
+                </li>
+                <li class="link-list">
+                    <a href="http://apiwww.facebook.com.br" target="_blank" class="link-menu">WhatsApp</a>
+                </li>
+            </ul>
+ 
+        </nav>
+    </div>
+</section>
+</header>
+
+<main id="container">
+    <section class="boxform">
+    <div class="box-login1">
+        <form action="index.html" method="GET" class="formlayout">
+            <label> Digite seu email:</label>
+            <input type="email" name="email" placeholder="Digite aqui..." class="camp-login">
+        <label> Digite sua senha:</label>
+        <input type="password" name="senha" placeholder="Digite aqui..." class="camp-login">
+        <button name="bntAcessar" class="bntAcessar">Acessar</button>
+    </form>
+    </div>
+ 
+    <div class="box-login2">
+        <form action="index.html" method="GET" class="formlayout">
+            <label> Digite seu Nome:</label>
+            <input type="text" name="nome" placeholder="Digite aqui..." class="camp-cadastro">
+
+            <label> Digite seu email:</label>
+            <input type="email" name="email" placeholder="Digite aqui..." class="camp-cadastro">
+
+            <label> Digite seu telefone:</label>
+            <input type="number" name="tele" placeholder="Digite aqui..." class="camp-cadastro">
+
+            <label> Selecione a sua data de nascimento: </label>
+            <input type="date" name="data" class="camp-cadastro">
+
+            <label> Selecione um curso:</label>
+            <select class="camp-cadastro">
+                <option value="">Selecione</option>
+                <option value=""> Desing Gráfico</option>
+                <option value=""> Front-End</option>
+                <option value=""> Back-End</option>
+                <option value=""> Banco de dados</option>
+            </select>
+
+             <label> Digite sua senha:</label>
+             <input type="password" name="senha" placeholder="Digite aqui..." class="camp-cadastro">
+
+             <label> Repita sua senha:</label>
+             <input type="password" name="repSenha" placeholder="Digite aqui..." class="camp-cadastro">
+
+             <label> Observação: (opcional)</label>
+             <textarea name="msg" placeholder="Digite aqui..." class="camp-cadastro-msg"></textarea>
+
+             <button name="bntCadastrar" class="bntCadastrar">Cadastrar</button>
+    </form>
+    </div>
+</section>
+</main>
+
+<footer id="end">
+      <section class="sct_1">
+        <div class="copy">
+            <p>Todos os direitos reservados - 2025 WMBarros Treinamento em TI.</p>
+        </div>
+    </section>
+</footer>
+<!-- Chamada de arquivo Javascript-->
+    <script src="./js/validar-campos.js"> </script> 
+
+</body>
+</html>
